@@ -3,7 +3,6 @@ package Controller;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -31,9 +30,12 @@ public class ListServlet extends HttpServlet {
 		String reset = request.getParameter("reset");
 		
 		System.out.println("Entering into list");
+		
+		ListOperations li = new ListOperations();
 	
 		if(add!=null) {
 			// Call the add method in list operations and store the return list in list variable
+			
 			System.out.println("calling add equals method");
 			
 		
